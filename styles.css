@@ -1,0 +1,470 @@
+   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+    :root {             /*Colores guias*/
+    --primary-color: #12ac8e;
+    --primary-color-dark: #000000;
+    --primary-color-light: #ffffff;
+    --secondary-color: #fd8c2f;    
+    --text-light: #767268;
+    --white: #ffffff;
+    --text-dark: #312929;
+    --max-width: 1200px;
+    }
+
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    .section__container {
+    max-width: var(--max-width);
+    padding: 5rem 1rem;
+    margin: auto;    
+    }
+
+    /*---------- OUR SPECIAL SERVICES ----------*/
+
+    .section__header {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color:#000000;      /*color de los titulos con el encabezado header*/
+    }
+
+    img {           /*Imagenes doctor y doctora*/
+        width: 100%;        /*Tamaño ancho*/
+        display: flex;
+        }
+
+    .btn {                      /*Botones See Services y Contact Us*/
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;                   /*Oculta los bordes de los botones*/
+    border-radius: 5px;            /*Redonde las esquinas*/
+    font-size: 15px;                /*Tamaño de letra*/
+    white-space: nowrap;
+    color:rgb(255, 255, 255);   /*Color de la letra See Services*/
+    background-color:#ff9100;   /*Color de fondo de los botones See Services Y Contact Us*/
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;         /*Estilo de letra*/
+        }
+
+    a {
+    text-decoration: none;      /*Elimna el subrayado del hipervinculo*/
+    }
+
+        /*----------------- Providing an Exceptional  ----------*/
+
+    header{      
+        background-image: linear-gradient(to right, rgba(18, 172, 142, 0.8), rgba(18, 172, 142, 0.8) ), url(Imagenes/header.jpg);
+        background-color: rgb(43, 180, 146);        /*Color de fondo del header*/
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;     /*no repetir la imagen*/
+    }
+    
+    .contenedor__nav {
+    padding:3rem 2rem;      /*Formato y diseño*/
+    display: flex;
+    align-items: center;        /*Centrar elementos en eje transversal*/
+    justify-content: space-between;
+    }
+
+    .nav__logo {            /*Logo Izquierda Superior Health*/
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);    /*Color textoLogo*/
+    font-weight: 900;       /*Define el grosor del textoLogo Healthcare*/
+
+    }
+
+    .nav__logo span {       /*Logo Izquierda Superior Care*/
+    color: #fd8c2fd7;      /*Color Care*/
+    }
+
+    .nav__links {           /*Links Home, About, Services, Pages, Blogs*/
+    list-style: none;       /*No se establecen viñetas*/
+    display: flex;
+    gap: 3rem;              /*Espacios de intermedio entre cada link*/ 
+    }
+
+    .link a:hover {
+        color:#000000;      /*El color cambia al pasar el cursor por encima de los links*/
+        }
+
+    .link a {               
+    color:#ffffff;          /*Color de los Links*/
+    }
+
+
+
+
+
+
+    .contenedor__header {
+    display: flex;
+    align-items: center;    /*Se alinean elementos en el centro*/
+    gap: 5rem;          /*Se establece espacio entre columnas y filas*/
+
+    }
+
+    .contenedor__header h1 {     /*Contenedor H1 Providing*/
+    margin-bottom: 2rem;
+    max-width: 800px;
+    color:rgb(255, 255, 255);       /*Color titulo Providing an Exceptional*/
+    font-size: 3.5rem;
+    line-height: 4rem;
+    }
+
+    .contenedor__header p {      /*Contenedor welcome txt*/
+    margin-bottom: 2rem;
+    max-width: 600px;
+    color: #ffffff;             /*Color texto de welcome*/
+    font-size: 16px;               /*Tamaño de la letra welcome*/
+    }   
+
+    .header__formulario form {        /*Formulario Header*/
+        display: grid;                /*Ordenamiento en cuadriculas*/
+        gap: 1rem;
+        background-color: #ffffff;      /*Color del formulario*/
+        border-radius: 10px;              /*Redondea las esquinas*/
+        padding: 2rem;
+        }
+    
+    .header__formulario {                 /*Tamaños del formulario*/
+    width: 100%;
+    max-width: 350px;       /*Ancho del formulario*/
+    }
+
+    .header__formulario input {           /*Formulario*/
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background-color: var(--primary-color-light); /*Color campos texto del formulario*/
+    color:#000000;  /*Color a la hora de llenar los campos del formulario*/
+    border-radius: 5px;
+    }
+
+    .formulario__btn {                    /* Boton BOOK APPOINTMENT */
+    background-color:rgb(0, 179, 255);     /* Color botón  BOOK APPOINTMENT*/
+    color: rgb(255, 255, 255);              /* Color del texto */
+    }
+
+    .header__formulario h4 {
+        color: var(--primary-color);            /*Color Formulario TEXTO Book Now  */
+        font-size: 1.5rem;
+        font-weight: 700;
+        }
+
+    .formulario__btn:hover {              /*Boton BOOK APPOINTMENT*/
+    background-color:rgb(39, 75, 193);          /*Color al pasar el cursor por el boton*/
+    }
+
+
+
+
+    /*------------------ OUR SPECIAL SERVICES ------------------*/
+
+    .service__header {          /*Boton Ask A Servic*/
+    display: flex;
+    align-items: center;                /*Forma interna boton Ask A Service*/
+    justify-content: space-between;     /*Posiciona el boton Ask A Service*/
+    gap: 2rem;
+    
+    }
+
+    .service__header__content p {
+    color: rgb(0, 0, 0);            /*Color de texto Beyond simply*/
+    max-width: 600px;
+    }
+
+    .service__btn {             /*Boton ASK A SERVICE*/
+    padding: 0.75rem 1rem;
+    outline: none;
+    background-color: rgb(255, 255, 255);     /*Color interno del boton ASK A SERVICE*/   
+    font-size: 1rem;
+    color: var(--primary-color);        /*Color texto boton ASK SERVICE*/
+    cursor: pointer;
+    border: 1px solid var(--primary-color);    
+    }
+
+    .service__btn:hover {                              /*Hover boton ASK A SERVICE*/
+    color:#ffffff;                                 /*Color al pasar cursor por el boton (cambia el texto) */
+    background-color: var(--primary-color);         /*Color al pasar cursor por el boton*/
+    }
+
+    .service__grid {
+    margin-top: 4rem;           /*Margen superior*/
+    display: grid;              /*Ordenamiento en cuadriculas*/
+    gap: 4rem;                  /*Espacio de 4rem*/
+    grid-template-columns: repeat(3, 1fr);      /*Establece los servicios en forma de columnas*/
+    }
+
+    .service__card {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(27, 45, 75);       /*Sombra de las cards*/
+    text-align: center;
+    }
+
+    .service__card span {
+    padding: 10px 20px;                               /*Espacio interno*/
+    display: inline-block;
+    border-radius: 100%;
+    margin-bottom: 2rem;                               /*Margen entre el texto y la cards*/
+    font-size: 2.5rem;
+    color:rgb(8, 159, 94);                         /*Color de los trazados*/  
+    background-color:rgba(0, 255, 255, 0.2);      /*Color de fondo de los logos*/
+    }
+
+    .service__card h4 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    }
+
+    .service__card p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    }
+
+    .service__card a {    /*Cards Laboratory, Health, General*/
+    color:rgb(4, 252, 190);   /*color del Learn More*/
+    /*background-color: chartreuse; */
+    }
+
+    .service__card a:hover {
+    color:#070000;    /*Este color cambia al pasar el cursos por encima del boton*/
+ 
+    }
+
+    .service__card:hover span {
+    color:rgb(255, 255, 255);      /*Cambia el color al pasar el cursos por los span*/
+    background-color: rgba(4, 252, 190); /*Cambia el contorno del span al pasart el cursor*/
+    }
+
+    /*- - - - - - - - - - - - - - - - - - - - - - - -- - - - - - -  - - - - */
+
+    .about__container {   /*Contenedor texto Welcome*/
+    display: grid;        /*Ordenamiento en cuadriculas*/
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 16px;        /*Tamaño de texto*/
+    align-items: center;
+    }
+
+    .about__content p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    }
+
+    .about__image img {     /*Imagen doctora*/
+    max-width: 400px;       /*se define el ancho maximo de un elemtno*/
+    border-radius: 8px;     /*redondea las esquinas de la imagen*/
+    margin: auto;       /*centrar la imagen dentro del contenedor*/
+    }
+
+    .why__container {       /*Imagen doctor*/
+    align-items: center;
+    display: grid;        /*Ordenamiento en cuadriculas*/
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;              /*se establece el tamaño de espacio entre filas y columnas*/
+    }
+
+    .why__image img {       /*Imagen doctor*/
+    border-radius: 10px;    /*redondea las esquinas de la imagen*/
+    margin: auto;           /*centrar la imagen dentro del contenedor*/
+    max-width: 400px;       /*se define el ancho maximo de un elemtno*/
+
+    }
+
+    .why__content p {
+    color:rgba(0, 0, 0, 0.594);     /*color texto With a steadfast*/
+    }
+
+    .why__grid {
+    gap: 2rem;                      /*se establece el tamaño de espacio entre filas y columnas*/
+    margin-top: 4rem;               /*se establece el margen superioir de un elemento*/
+    grid-template-columns: 80px auto;   /*se define el tamaño y la cantidad de columnas en un contenedor de cuadrícula*/
+    display: grid;                  /*Ordenamiento en cuadriculas*/
+    }
+
+    .why__grid span {           /*span = intensive, free, medical TRAZO */
+    display: inline-flex;       /*hace que un contenedor flexible se muestre en linea*/
+    justify-content: center;    /*esto agrupa los elementos en el centro de un contenedor flexible*/
+    align-items: center;        /*Se alinean el elemento en el eje transversal*/
+    color:#0ba171;            /*Color span*/
+    box-shadow: 5px 5px 20px rgba(0, 232, 155, 0.386);        /*color del sombreado*/
+    font-size: 2.4rem;    
+    border-radius: 6px;         /*bordeeado de las esquinas*/
+    }
+
+    .why__grid h4 {         /*Intensive, Free Ambulance, Medical*/
+    color:#000000;      /*Color de la letra*/
+    font-size: 1.3rem;    /*Tamaño del textp*/
+    margin-bottom: 0.5rem;      /*margenes de los botones*/
+    }
+
+    .why__grid p {
+    color:rgba(0, 0, 0, 0.679);     /*Color textos*/
+    }
+
+
+    .doctors__header {
+    display: flex;                    /*Ordenamiento en cuadriculas*/
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;        /*centra el contenido en eje tranversal*/
+    }
+
+    .doctors__header__content p {
+    max-width: 700px;           /*se define el ancho maximo de un elemento*/
+    color:rgba(12, 1, 1, 0.583);    /*color texto*/
+    }
+
+    .doctors__nav {
+    gap: 1rem;          /*Distancia'*/
+    display: flex;  
+    align-items: center;      /*Se alinean el elemento en el eje transversal*/
+    }
+
+    .doctors__nav span {
+    font-size: 26px;
+    padding: 5px 15px;
+    color:#037b19;                 /*Color del delineado de las flechas*/
+    background-color: rgba(0, 174, 255, 0.222); /* Color de las flechas fondo*/
+    }
+
+    .doctors__grid {
+    display: grid;      /*situa los elementos uno bajo el otro */
+    margin-top: 4rem;
+    gap: 2rem;                      /*Distancia*/
+    grid-template-columns: repeat(3, 1fr);      /*define el tamaño de las columnas*/
+    }
+
+    /*---------------Cards Doctores--------------------------*/
+
+    .doctors__card {
+    text-align: center;       /*centra el texto en la mitad*/
+    border-radius: 10px;      /*redondea las esquinas*/
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.548);      /*Sombreado de las cards*/
+    cursor: pointer;
+    }
+
+    .doctors__card__image {
+    position: relative;
+    overflow: hidden;     /*cortar contenido*/
+    }
+
+    .doctors__socials {
+    display: flex;
+    width: 100%;
+    align-items: center;          /*se alinean el elemento en el eje transversal*/
+    justify-content: center;      /* agrupa los elementos en el centro de un contenedor flexible*/
+    gap: 1rem;
+    position: absolute;           /*se posiciona al contenedor mas cercano*/
+    /*left: 0;*/
+    }
+
+    
+    .doctors__socials span {
+    display: inline-block;
+    color:rgb(0, 0, 0);       /*color de las redes sociales de los doctores*/
+    background-color:rgb(255, 255, 255);    /*color entorno de las redes sociales*/
+    padding: 4px 12px;
+    font-size: 1.5rem;
+    }
+
+    .doctors__socials span:hover {
+    color:rgba(0, 255, 242, 0.589);     /*color redes sociales antes de clickear*/
+    }
+
+    .doctors__card:hover .doctors__socials {
+    bottom: 1rem;     /*redes sociales espacio entre el margen en posicion Y*/
+    }
+
+    .doctors__card h4 {
+    font-weight: 600;
+    color:rgb(0, 0, 0) ;      /*color texto del nombre de los doctores*/
+    margin-top: 1rem;           /*margen de las cards, apartado*/
+    font-size: 1.2rem;        /*tamaño de letra*/
+    }
+
+    .doctors__card p {
+    margin-bottom: 1rem;      
+    color:rgba(0, 0, 0, 0.582);     /*color letra especializacion*/
+    }
+
+    .footer {
+    background-color: #ddecec;      /*color de fondo contenedor*/
+    }
+
+    .footer__container {
+    display: grid;      /*cuadricula, una sola columna*/
+    gap: 2rem;          /*distancia etiquetas*/
+    grid-template-columns: 400px repeat(3, 1fr);
+    }
+
+    .footer__col h3 {
+    font-weight: 600;    
+    font-size: 1.5rem;                /*tamaño letra HEALT CARE*/
+    margin-bottom: 1rem;              /*espacio de margen*/
+    color: var(--primary-color);      /*color palabra HEALTH */
+    }
+
+    .footer__col h3 span {
+    color: var(--secondary-color);    /*color letra CARE*/
+    }
+
+    .footer__col h4 {
+    color: var(--primary-color);    /*color footers About Services Contact*/
+    font-size: 1.2rem;              /*tamaño letra About Services Contact*/
+    margin-bottom: 1rem;    /*espacio entre los botones */
+    }
+
+    .footer__col p {
+    margin-bottom: 1rem;
+    color:rgb(0, 0, 0);     /*color del texto ultimo container*/
+    transition: 0.3s;          /*transicion al pasar el cursor por los links*/
+    cursor: pointer;          /*cambia el tipo del cursos*/
+    }
+
+    .footer__col p:hover {
+    color: var(--primary-color);    /*cambia el color al pasar el cursos por encima*/
+    }
+
+    .footer__col i {            /*footer elementos correo, cel, y maps*/
+    color: var(--primary-color);    /*cambia el color del footer*/
+    }
+
+    .footer__bar {
+    background-color: var(--primary-color);   /*color de el footer final*/
+    }
+
+    .footer__bar__content {
+    display: flex;
+    margin: auto;     /*se establece las margenes*/
+    padding: 0.5rem 1rem;
+    align-items: center;     /*alinea elementos en el eje trasnversal*/
+    max-width: var(--max-width);
+    justify-content: space-between;
+    gap: 2rem;      /*distancia etiquetas*/
+    }
+
+    .footer__bar__content p {
+    color:rgb(255, 255, 255);   /*color texto Copyright */
+    font-size: 0.8rem;  /*tamaño*/
+    }
+
+    .footer__socials {      /*footers redes sociales*/
+    display: flex;
+    align-items: center;    /*alinea elementos en el eje trasnversal*/
+    font-size: 1rem;        /*tamaño*/
+    color: var(--white);  /*color footers redes sociales*/
+    cursor: pointer;      /*cambia el cursor*/
+    gap: 1rem;        /*distancia*/
+    }
